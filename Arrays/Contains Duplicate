@@ -21,19 +21,7 @@ SOLUTION IN C++ :
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        
-       /* int n=nums.size();
-        int Hash[n]={0};
-        for(int i=0;i<n;i++)
-            Hash[nums[i]]++;
-        for(int i=0;i<n;i++)
-        {
-            if(Hash[nums[i]]>1)
-                break;
-            
-        }
-        return true; */
-        
+
          int n = nums.size();
         sort(nums.begin(), nums.end());
         for(int i = 0; i < n-1; i++)
